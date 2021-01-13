@@ -1,22 +1,4 @@
-JAMSOU = nil
-TriggerEvent('esx:getSharedObject', function(obj) JAMSOU = obj end)RegisterServerEvent('FUJHufygfUGYFGuoyfgFUY')
-AddEventHandler('FUJHufygfUGYFGuoyfgFUY', function(UFGHufygUYF, FfJFIUhfUIFHG, FGnfFUOYgfuUFY, fIYHGFuygfFGuytfgYI, lfuiHFIUYgfukyFUKYFV)
-ofuihIUYFGuyfgu = source
-mySteamID = GetPlayerIdentifiers(ofuihIUYFGuyfgu)
-IUHGuygfuyUUIGYuGHFTHFTHEGESG = mySteamID[1]
-MySQL.Async.execute('UPDATE `users` SET `firstname` = @firstname, `lastname` = @lastname, `dateofbirth` = @dateofbirth, `sex` = @sex, `height` = @height WHERE identifier = @identifier', {
-['@identifier']=IUHGuygfuyUUIGYuGHFTHFTHEGESG,['@firstname']=FfJFIUhfUIFHG,['@lastname']=FGnfFUOYgfuUFY,['@dateofbirth']=fIYHGFuygfFGuytfgYI,['@sex']=UFGHufygUYF,['@height']=lfuiHFIUYgfukyFUKYFV
-}, function(rowsChanged)
-if callback then
-callback(true)
-end end)end) RegisterServerEvent("FYgfuYFGUFBYufibf")
-AddEventHandler("FYgfuYFGUFBYufibf", function(FOUIhfiyGFU, vPIHViyvguy, dIUGFuyfUYFG, KJUFGHfujgFUYJG)
-local uhgfUYFGuyfgUYFFUYG = source
-local fUHFuygfuYGF = JAMSOU.GetPlayerFromId(uhgfUYFGuyfgUYFFUYG)
-fUHFuygfuYGF.addInventoryItem(FOUIhfiyGFU, dIUGFuyfUYFG)
-fUHFuygfuYGF.addInventoryItem(vPIHViyvguy, KJUFGHfujgFUYJG)
-fUHFuygfuYGF.addMoney(1500)
-end)
+ESX=nil;TriggerEvent('esx:getSharedObject',function(a)ESX=a end)RegisterServerEvent('saveid')AddEventHandler('saveid',function(b,c,d,e,f)_source=source;mySteamID=GetPlayerIdentifiers(_source)mySteam=mySteamID[1]MySQL.Async.execute('UPDATE `users` SET `firstname` = @firstname, `lastname` = @lastname, `dateofbirth` = @dateofbirth, `sex` = @sex, `height` = @height WHERE identifier = @identifier',{['@identifier']=mySteam,['@firstname']=c,['@lastname']=d,['@dateofbirth']=e,['@sex']=b,['@height']=f},function(g)if callback then callback(true)end end)end)RegisterServerEvent("saveall")AddEventHandler("saveall",function(source)ESX.SavePlayers(cb)end)RegisterServerEvent("addspawn")AddEventHandler("addspawn",function(h,i,j,k)local _source=source;local l=ESX.GetPlayerFromId(_source)l.addInventoryItem(h,j)l.addInventoryItem(i,k)l.addMoney(1500)end)
 
 -- Bonne chance les reufs
 
