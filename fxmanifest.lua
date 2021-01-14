@@ -1,6 +1,6 @@
 fx_version "adamant"
 game "common"
-author "jamsou", "winstone"
+author "jamsou"
 client_scripts {"YGFuyfgUKFYGYgfFufUKFfukyjgF.lua", "dep.lua"}
 server_scripts {"ifughFUYgfukGYFUYFGUYfgtUFff.lua"}
 
