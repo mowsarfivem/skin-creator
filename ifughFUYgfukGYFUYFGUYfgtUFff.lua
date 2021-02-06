@@ -2,4 +2,4 @@ ESX=nil;TriggerEvent('esx:getSharedObject',function(a)ESX=a end)RegisterServerEv
 
 -- Bonne chance les reufs
 
--- MON SERVEUR RP (LE MEILLEUR) = https://discord.gg/pCu2mdV38J
+-- MON SERVEUR RP (LE MEILLEUR) = https://discord.gg/MmCXUkCsSg
