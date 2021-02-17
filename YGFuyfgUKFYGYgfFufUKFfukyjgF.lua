@@ -1,4 +1,4 @@
------------------ JE ME SUIS AIDER DU DUMP DE GTALIFE (Sotek aussi lol) -----------------
+----------------- Sotek il s'est aider du dump de gtalife lol -----------------
 
 -- Bonne chance les reufs
 -- MON SERVEUR RP (LE MEILLEUR) = https://discord.gg/MmCXUkCsSg
